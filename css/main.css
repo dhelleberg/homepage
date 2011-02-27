@@ -184,6 +184,15 @@ header { /*6 cols*/
   padding-left: 26px;
 }
 
+#git li
+{
+  background:url("http://assets1.github.com/images/modules/dashboard/news/push.png") no-repeat left 4px;
+  list-style: none outside none;
+  padding-left: 24px;
+}
+
+
+
 .rightside li {
 	margin-bottom: 10px;
 }
