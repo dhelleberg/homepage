@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Dominik Helleberg - Photos</title>
+	
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    	
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>		
+
+		<meta name="description" content="Pictures I've taken"/>
+		<link rel="stylesheet" media="all" href="css/main.css"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1"/>
+		<!-- Add "maximum-scale=1" to fix the Mobile Safari auto-zoom bug on orientation changes, 
+			but keep in mind that it will disable user-zooming completely. Bad for accessibility. -->
+	</head>
+
+	<body>	
+		<nav>
+			<ul>
+				<li><a href="index.html">Main</a></li>
+				<li><a href="work.html">Work</a></li>
+				<li class="active"><a href="#">Photos</a></li>				
+				<li><a href="projects.html">Projects</a></li>	
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<section>
+			<section class="main">
+				<h3>Pictures worth sharing and...</h3>
+				<p>...of course css-animations worth learning ;)</p>
+			</section>
+			<aside class="rightside small">
+				<section id="photonav">
+					<nav>
+						<ul>
+							<li>Next</li>
+							<li>Previous</li>
+						</ul>
+					</nav>
+				</section>
+			</aside>
+			<section class="pictures">
+				<section class="img" id="p1">
+					<section class="description">Seychelles blah blah</section>
+					<img src="photos/P1040431.JPG"/>					
+				</section>
+			</section>
+		</section>
+		<hr/>
+		<footer>
+			<section class="leftFooter small">
+				<p>by Dominik Helleberg 2011</p>
+				<p>Feel free to contact me via dominik[dot]helleberg[at]googlemail.com</p>
+				<p>or <a href="http://twitter.com/_cirrus_">follow me (@_cirrus_)</a> on twitter</p>
+			</section>
+			<section class="rightFooter small">
+				<p>Powered by <a href="http://lessframework.com/">Less Framework 4</a>, <a href="http://arnaumarch.com/en/less-grid.html">Less Grid</a>, <a href="http://code.google.com/p/twitterjs/">Twitterjs</a>, <a href="http://www.zazar.net/developers/zrssfeed/default.html">zRSSFeed</a> and of course <a href="http://jquery.com">jQuery</a></p>
+				<object data="img/HTML5_1Color_Black.svg" width="100px" height="100px" type="image/svg+xml">
+					<img src="img/HTML5_1Color_Black.png" width="100px" height="100px"/>
+				</object>
+				<p>HTML5 handcrafted with <a href="http://notepad-plus-plus.org/">notepad++</a> to keep myself up-to-date ;)</p>
+			</section>
+		</footer>
+		
+	<script src="js/jquery-1.5.0.-min.js"></script>
+	<script src="js/less-grid-4.js"></script>
+	<script type="text/javascript">
+		$("#scroll").click(function() {
+			$("html, body").animate({scrollTop : 0},1000);
+		});
+	</script>
+		<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script> 
+	<script type="text/javascript">
+		$(document).ready(function () {
+		  $('#projects').rssfeed('http://code.google.com/feeds/p/pegel-online-android/updates/basic', {
+			limit: 5,
+			content: false,
+			titletag: 'p',
+			header: false
+		  });
+		});
+		</script>	
+
+	</body>	
+</html>

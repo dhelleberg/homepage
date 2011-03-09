@@ -144,6 +144,18 @@ header { /*6 cols*/
   margin-top: 24px;
 }
 
+.img img{
+  width:890px;  
+  padding: 3px;
+  background: #c3c3c3;
+  border: 1px solid #fff;
+}
+.description {
+  width:890px;  
+  
+}
+
+
 #tweets li {    
   background:url("../img/twitter_newbird_blue_icon.png") no-repeat left 4px;
   list-style: none outside none;
@@ -191,7 +203,10 @@ header { /*6 cols*/
   padding-left: 24px;
 }
 
-
+#photonav li
+{
+	float: right;
+}
 
 .rightside li {
 	margin-bottom: 10px;
