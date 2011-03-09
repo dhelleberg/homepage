@@ -46,13 +46,6 @@
 					<img src="img/ajax-loader.gif"/>
 				</section>
 			</aside>
-
-			<aside class="rightside small">
-				<h4>Geocaching stats</h4>
-				<section>
-					<a href="http://www.geocaching.com/profile/?guid=7367c494-cc80-463a-ab10-1cf9ba61e3c9"><img alt="geocaching profile" src="http://img.geocaching.com/stats/img.aspx?txt=Check+my+profile&uid=7367c494-cc80-463a-ab10-1cf9ba61e3c9"/></a>
-				</section>
-			</aside>
 			<section class="main">
 				<h3>Hobbies</h3>
 				<p>What else do I do beside my <a href="work.html">work</a> and my <a href="projects.html">projects</a>?</p>
@@ -60,6 +53,12 @@
 				<p>Geocaching is quite cool, check my latest activities <a href="http://www.geocaching.com/profile/?guid=7367c494-cc80-463a-ab10-1cf9ba61e3c9">here</a>.</p>
 				<p>I also like R/C planes, I own a <a href="http://twitpic.com/6747r">Shocky YAK  54</a> which I control with my Graupner MX-12 remote.</p>
 			</section>
+			<aside class="rightside small">
+				<h4>Geocaching stats</h4>
+				<section>
+					<a href="http://www.geocaching.com/profile/?guid=7367c494-cc80-463a-ab10-1cf9ba61e3c9"><img alt="geocaching profile" src="http://img.geocaching.com/stats/img.aspx?txt=Check+my+profile&uid=7367c494-cc80-463a-ab10-1cf9ba61e3c9"/></a>
+				</section>
+			</aside>
 			<section class="main">
 				<h3>Music</h3>
 				<p>Music is just great even better when it comes in excellent quality. Concerts and festivals like the <a href="http://en.summerjam.de/">Summerjam</a> are just a great experience. Unbeatable.</p>
@@ -101,17 +100,19 @@
 			limit: 5,
 			content: false,
 			titletag: 'p',
-			header: false
+			header: false,
+			key:"ABQIAAAAgx1DdGd3yR-1qVt6aNDWDxQ3SBPyh0o1qHh3iYv7t0Jii7XskRSu4ouq85vDSQ6RzLNfs02dSjfntQ"
 		  });
 		});
 		</script>	
 	<script type="text/javascript">
 		$(document).ready(function () {
-		  $('#git').rssfeed('https://github.com/oluz/homepage/commits/master.atom', {
-			limit: 5,
+		  $('#git').rssfeed('http://github.com/oluz/homepage/commits/master.atom', {
+			limit: 3,
 			content: false,
 			titletag: 'p',
-			header: false
+			header: false,
+			key:"ABQIAAAAgx1DdGd3yR-1qVt6aNDWDxQ3SBPyh0o1qHh3iYv7t0Jii7XskRSu4ouq85vDSQ6RzLNfs02dSjfntQ"
 		  });
 		});
 		</script>	
