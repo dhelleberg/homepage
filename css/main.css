@@ -151,7 +151,10 @@ header { /*6 cols*/
   border: 1px solid #fff;
 }
 .description {
-  width:890px;  
+  position:absolute;top: 230px;
+  
+  float: left;  
+  width: 480px;  
   
 }
 
