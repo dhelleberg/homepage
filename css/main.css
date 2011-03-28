@@ -243,25 +243,18 @@ footer {
 /* The picture album stuff */
 
 .protzero {
-	-moz-transition-property: -moz-transform, opacity;
-	-moz-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 0.4s;
 	-moz-transform:  rotate(0deg);
 	
-	-webkit-transition-property: -webkit-transform, opacity;
-	-webkit-transition-duration: 1s;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 0.4s;
 	-webkit-transform:  rotate(0deg);
-
 }
 
 .popaque
 {
-	-moz-transition-property: opacity;
-	-moz-transition-duration: 0.5s;
-	
-	-webkit-transition-property: opacity;
-	-webkit-transition-duration: 0.5s;
-	
-	opacity: 1.0;
+
 }
 
 
@@ -272,53 +265,55 @@ footer {
 
 .pinvisible {
 	-moz-transition-property: opacity;
-	-moz-transition-duration: 0.5s;
+	-moz-transition-duration: 0.6s;
 	
 	-webkit-transition-property: opacity;
-	-webkit-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.6s; /* needs to take  longer then the protzero animantion */
 	
 	opacity: 0.0;
 }
 
 
 .p1 {	
-	z-index:20 !important;
+	z-index:10;	
 }
-
 .p2 {
 	z-index:9;	
 }
-
-.p2rot {
-	-moz-transform:  rotate(5deg);
-	-webkit-transform:  rotate(5deg);
-}
-
 .p3 {
-	-moz-transform:  rotate(-1.5deg);
-	-moz-transition-property: -moz-transform;
-	-moz-transition-duration: 1s;	
 	z-index:8;
 }
-/*
-#p4 {
-	-moz-transform:  rotate(-1deg);
-	-moz-transition-property: -moz-transform;
-	-moz-transition-duration: 1s;
-	position:absolute;top:230px;
-	z-index:-3;
+.p4 {
+	z-index:7;
 }
-#p5 {
-	-moz-transform:  rotate(0.5deg);
-	position:absolute;top:230px;
-	z-index:-4;
-}*/
+.p5 {
+	z-index:6;
+}
 
-.px {
-	-moz-transform: opacity;
-	-moz-duration: 1s;
-	opacity: 0;
+.p1rot {
+	-moz-transform:  rotate(-2.5deg);
+	-webkit-transform:  rotate(-2.5deg);
 }
+
+.p2rot {
+	-moz-transform:  rotate(2deg);
+	-webkit-transform:  rotate(2deg);
+}
+
+.p3rot {
+	-moz-transform:  rotate(-1.5deg);
+	-webkit-transform:  rotate(-1.5deg);
+}
+
+.p4rot {
+	-moz-transform:  rotate(-2.5deg);
+	-webkit-transform:  rotate(-2.5deg);
+}
+.p5rot {
+	-moz-transform:  rotate(4.5deg);
+	-webkit-transform:  rotate(4.5deg);
+}
+
 
 
 /*		Tablet Layout: 768px.
