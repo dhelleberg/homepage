@@ -1,6 +1,7 @@
 var index = 1;
-var pics = 5;
+var pics = 7;
 var transitionEnd = "TransitionEnd";
+var internetexploder = false;
 
 $(document).ready(function() {
 
@@ -10,6 +11,7 @@ if ($.browser.webkit) {
 	transitionEnd = "webkitTransitionEnd";
 } else if ($.browser.msie) {
 	vP = "-ms-";
+	internetexploder = true;
 } else if ($.browser.mozilla) {
 	vP = "-moz-";
 	transitionEnd = "transitionend";
@@ -17,9 +19,11 @@ if ($.browser.webkit) {
 	vP = "-o-";
 	transitionEnd = "oTransitionEnd";
 }
-  
-  $("#p"+index).one(transitionEnd, updateTransition, true);
+  if(!internetexploder)
+	$("#p"+index).one(transitionEnd, updateTransition, true);
 
+  if(internetexploder) //display warning  
+	setTimeout("displayWarning()",500);
   
   
   $("#pnext").click(function(){
@@ -37,14 +41,22 @@ if ($.browser.webkit) {
 		//brute force :(
 		for(c = 1; c <= pics; c++)
 			$("#p"+toremove).removeClass("p"+c+"rot");
-		
 	  
-	    //$("#p"+index).removeClass("popaque");  
 		$("#p"+index).addClass("pinvisible");  
     
+		if(internetexploder)
+			updateTransition();
 	});
   
 });
+
+function displayWarning() {
+	$("#subtitle").fadeTo(500,0.01, function () {
+		$("#subtitle").text("Please use a decent Browser (non-IE)");
+		$("#subtitle").fadeTo(500,1); 
+		}
+	);
+}
 
 function updateTransition() {
 	$("#p"+index).css("z-index",10-pics);
@@ -56,7 +68,6 @@ function updateTransition() {
 		{
 			var zindex = parseInt($("#p"+c).css("z-index"));
 			var newindex = zindex+1;
-			//alert("zi:"+ zindex+" for "+c + " ni: "+newindex);
 			$("#p"+c).css("z-index",newindex );
 		}
 	}
