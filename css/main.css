@@ -352,8 +352,11 @@ px      68    160    252    344    436    528    620    712    */
 	  float: left;  
 	  width: 412px;
 	}
-	.img img{
+	.img {
 		width:705px; 
+	}
+	.pabs {
+		position:absolute;top:210px;	
 	}
 
 }
@@ -439,7 +442,7 @@ px      68    160    252    */
 	  width: 252px;
 	}
 	
-	.img img{
+	.img {
 		width:246px; 
 	}
 
@@ -522,8 +525,11 @@ px      68    160    252    344    436    */
 	   width: 436px;
 	}
 	
-	.img img{
+	.img {
 		width:430px; 
 	}
-
+	
+	.pabs {
+		position:absolute;top:180px;	
+	}
 }
