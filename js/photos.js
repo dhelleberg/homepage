@@ -26,7 +26,7 @@ if ($.browser.webkit) {
 	setTimeout("displayWarning()",500);
   
   
-  $("#pnext").click(function(){
+  $("#pnext,.img").click(function(){
 		//remove rotation
 		var toremove = index+1;
 		if(toremove > pics)
