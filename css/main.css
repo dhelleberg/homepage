@@ -252,15 +252,10 @@ footer {
 	-webkit-transform:  rotate(0deg);
 }
 
-.popaque
-{
-
-}
-
-
 
 .pabs {
 	position:absolute;top:230px;
+	display:block;
 }
 
 .pinvisible {
@@ -289,6 +284,12 @@ footer {
 .p5 {
 	z-index:6;
 }
+.p6 {
+	z-index:5;
+}
+.p7 {
+	z-index:4;
+}
 
 .p1rot {
 	-moz-transform:  rotate(-2.5deg);
@@ -312,6 +313,14 @@ footer {
 .p5rot {
 	-moz-transform:  rotate(4.5deg);
 	-webkit-transform:  rotate(4.5deg);
+}
+.p6rot {
+	-moz-transform:  rotate(-1.0deg);
+	-webkit-transform:  rotate(-1.0deg);
+}
+.p7rot {
+	-moz-transform:  rotate(3.5deg);
+	-webkit-transform:  rotate(3.5deg);
 }
 
 
