@@ -232,11 +232,13 @@ footer {
    margin-left:24px;
    width: 320px;
    float: left;   
+   margin-bottom: 24px;
 }
 
 .rightFooter { /* 4cols */
    width: 344px;
-   float: right;   
+   float: right;
+   margin-bottom: 24px;
 }
 
 
@@ -516,7 +518,7 @@ px      68    160    252    344    436    */
 	  float: left;  
 	  width: 436px;	  
 	  margin-bottom: 24px; 
-	  padding: 0px;
+	  padding: 24px;
 	}
 	
 	.rightside {
@@ -539,6 +541,6 @@ px      68    160    252    344    436    */
 	}
 	
 	.pabs {
-		position:absolute;top:180px;	
+		position:absolute;top:220px;	
 	}
 }
