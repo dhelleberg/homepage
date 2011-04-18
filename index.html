@@ -49,7 +49,8 @@
 			<section class="main">
 				<section>
 					<h3>Purpose</h3>
-					<p>I created this page to share my view on different topics <a id="scroll" href="#">(see top menu)</a> and to play around with HTML5, SVG, Media Queries etc.</p>					
+					<p>I created this page to share my view on different topics <a id="scrollup" href="#">(see top menu)</a> and to play around with HTML5, SVG, Media Queries etc.</p>
+					<p>Suggestion and comments are always welcome, check the <a id="scrolldown" href="#">footer</a> for contact details.</p>
 				</section>
 			</section>			
 			<aside class="rightside small">
@@ -78,8 +79,11 @@
 	<script src="js/jquery-1.5.1.min.js"></script>
 	<script src="js/less-grid-4.js"></script>
 	<script type="text/javascript">
-		$("#scroll").click(function() {
+		$("#scrollup").click(function() {
 			$("html").animate({scrollTop : 0},1000);
+		});
+		$("#scrolldown").click(function() {
+			$("html").animate({scrollTop : $(document).height() },1000);
 		});
 	</script>
 	
