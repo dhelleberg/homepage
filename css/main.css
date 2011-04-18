@@ -250,6 +250,10 @@ footer {
 	-webkit-transition-property: -webkit-transform;
 	-webkit-transition-duration: 0.4s;
 	-webkit-transform:  rotate(0deg);
+	
+	-o-transition-property: transform;
+	-o-transition-duration: 0.4s;
+	-o-transform:  rotate(0deg);
 }
 
 
@@ -264,6 +268,9 @@ footer {
 	
 	-webkit-transition-property: opacity;
 	-webkit-transition-duration: 0.6s; /* needs to take  longer then the protzero animantion */
+
+	-o-transition-property: opacity;
+	-o-transition-duration: 0.6s; /* needs to take  longer then the protzero animantion */
 	
 	opacity: 0.0;
 }
@@ -294,11 +301,13 @@ footer {
 .p1rot {
 	-moz-transform:  rotate(-2.5deg);
 	-webkit-transform:  rotate(-2.5deg);
+	-o-transform:  rotate(-2.5deg);
 }
 
 .p2rot {
 	-moz-transform:  rotate(2deg);
 	-webkit-transform:  rotate(2deg);
+	-o-transform:  rotate(2deg);
 }
 
 .p3rot {
