@@ -17,10 +17,10 @@ if ($.browser.webkit) {
 	transitionEnd = "transitionend";
 } else if ($.browser.opera) {
 	vP = "-o-";
-	transitionEnd = "oTransitionEnd";
+	transitionEnd = "oTransitionEnd";	
 }
   if(!internetexploder)
-	$("#p"+index).one(transitionEnd, updateTransition, true);
+	$("#p"+index).one(transitionEnd, updateTransition, false);
 
   if(internetexploder) //display warning  
 	setTimeout("displayWarning()",500);
