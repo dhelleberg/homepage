@@ -66,7 +66,8 @@ a {
 body {
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Droid Sans', arial, serif;
+	font-weight: 300;
+	font-family: 'Roboto', arial, serif;
 }
 
 .small, small {
