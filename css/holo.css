@@ -26,7 +26,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .holo { overflow-x:hidden; }
 .holo::-webkit-scrollbar, .holo ::-webkit-scrollbar { width: 16px; }
 
-.holo a { text-decoration:none; }
+.holo a { text-decoration:none; color: #33B5E5;}
 .holo p, .holo .p, .holo-content h1 { padding: 0 0px 0px; margin: 0; }
 .holo-content h1 { padding-top: 24px; padding-bottom: 16px;}
 .holo p:first-child { padding-top: 0px; }
@@ -157,6 +157,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	text-transform:uppercase;
 	line-height: 32px;
 	margin-right: -1px;
+	color: #FFFFFF !important;
 }
 .holo-fixed-tabs a.current-tab {
 	border-color: inherit;
@@ -268,7 +269,6 @@ select.holo-spinner option { height: 32px; border-top: 1px #444 solid; }
 }
 
 .holo-dark,
-.holo-dark a,
 .holo-dark input,
 .holo-dark textarea,
 .holo-dark button,

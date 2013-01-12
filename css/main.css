@@ -127,6 +127,7 @@ nav li {
 header { /*6 cols*/	
 	width: 528px;
 	float: none;
+	margin-left: 10px;
 	margin-top:54px;	
 	margin-bottom:24px;
 }
