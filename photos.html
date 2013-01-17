@@ -14,17 +14,20 @@
 
 		<meta name="description" content="Pictures I've taken"/>
 		<link rel="stylesheet" media="all" href="css/main.css"/>
+		<link rel="stylesheet" media="all" href="css/holo.css"/>
 		<meta name="viewport" content="width=device-width; initial-scale=1"/>
 		<!-- Add "maximum-scale=1" to fix the Mobile Safari auto-zoom bug on orientation changes, 
 			but keep in mind that it will disable user-zooming completely. Bad for accessibility. -->
 	</head>
 
-	<body>	
-		<nav>
-			<ul>
+	<body class="holo holo-dark">
+		<div id="accent" class="holo-accent-blue">	
+		<nav class="holo-action-bar">
+			<div class="holo-fixed-tabs">
+				<ul id="nav">
 				<li><a href="index.html">Main</a></li>
 				<li><a href="work.html">Work</a></li>
-				<li class="active"><a href="#">Photos</a></li>				
+				<li class="current-tab"><a href="#">Photos</a></li>				
 				<li><a href="projects.html">Projects</a></li>	
 				<li><a href="about.html">About</a></li>
 			</ul>
