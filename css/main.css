@@ -551,6 +551,7 @@ px      68    160    252    344    436    */
 	  float: left;  
 	  width: 436px;
 	  margin-bottom: 8px;
+	  padding-left: 24px;
 	  margin-top: 0px;
 	}
 	.leftFooter { /* 5cols */
