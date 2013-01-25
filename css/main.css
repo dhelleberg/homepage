@@ -134,7 +134,7 @@ header { /*6 cols*/
 }
 
 .main { /* 6 cols */
-  float: left;  
+  /*float: left;  */
   width: 480px;  
   margin-right: 24px;  
   margin-bottom: 24px;  
